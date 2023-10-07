@@ -1,12 +1,15 @@
 body{
     margin: 0;
 }
+.burger{
+   display: none;
+}
 .header{
     background-color: #00a74a;
     width: 100%;
     height: 100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
 }
 .logo{
   width: 200px;
@@ -15,7 +18,7 @@ body{
 }
 .logo img{
     width: 120px;
-    padding:20px
+    padding: 20px;
 }
 .alinks{
   width: 400px;
@@ -32,31 +35,92 @@ body{
     letter-spacing: 1px;
     padding-left: 10px;
 }
+.alinks a:hover{
+    color: black;
+}
 .socialmedia{
   width: 400px;
   height: 30px;
   margin: 10px;
-  margin-left: 400px;
-  margin-top: 40px;
+  margin-left: 390px;
+  margin-top: 5px;
 }
-.socialmedia img{
-    width: 25px;
+
+.socialmedia svg:hover{
+    fill:black;
+    
+}
+.socialmedia svg{
+    fill: white;
     padding-left: 30px;
 }
 .signin{
     width: 100px;
     height: 30px;
-    margin: 10px;
-    margin-top: 40px;
+    margin-top: 50px;
+    margin-left: -40px;
 }
 .signin img{
-    width: 25px;
+    width: 30px;
+    padding-left: 30px;
+    margin-top: -11px;
 }
-@media (max-width:500px){
-    .logo img{
-        padding-left: 120px;
+@media (max-width:468px){
+    .burger{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin-left: -40px;
     }
-     .alinks{
-        margin-left: 500px;
-     }
+    .burger svg{
+        padding-left: 40px;
+    }
+    .burger svg:hover{
+        fill: white;
+    }
+    .signin img{
+        margin-left: -40px;
+    }
+   .alinks{
+    display: none;
+   }
+   .socialmedia{
+    display: none;
+   }
 }
+
+
+
+
+@media (max-width:1114px){
+    .burger{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin-top: 50px;
+        padding-left: 40px;
+    }
+    .burger svg:hover{
+        fill: white;
+    }
+    .burger svg{
+        width: 30px;
+    }
+    .logo{
+        margin-left: 40px;
+    }
+    .logo img{
+        padding-left: 40px;
+    }
+   .alinks{
+    display: none;
+   }
+   .socialmedia{
+    display: none;
+   }
+   .signin{
+    margin-left: 25px;
+   }
+}
+
+
