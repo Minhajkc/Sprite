@@ -70,16 +70,15 @@ body{
         display: block;
         width: 40px;
         height: 40px;
-        margin-left: -40px;
-    }
-    .burger svg{
-        padding-left: 40px;
+        padding-top: 50px;
+        margin-left: 20px;
+        padding-left: 20px;
     }
     .burger svg:hover{
         fill: white;
     }
     .signin img{
-        margin-left: -40px;
+        padding-top: 5px;
     }
    .alinks{
     display: none;
