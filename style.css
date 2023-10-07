@@ -57,14 +57,87 @@ body{
 .signin{
     width: 100px;
     height: 30px;
-    margin-top: 50px;
+    margin-top: 45px;
     margin-left: -40px;
 }
-.signin img{
-    width: 30px;
-    padding-left: 30px;
-    margin-top: -11px;
+.signin svg{
+     margin-left: 40px;
 }
+.signin svg:hover{
+    fill: white;
+}
+.firstbottle{
+    background-color: black;
+    width: 100%;
+    height: 700px;
+    display: flex;
+}
+.bottle{
+    height: 600px;
+    width: 600px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.bottle img{
+    width: 590px;
+}
+.firsttext{
+    height: 400px;
+    width: 700px; 
+    margin-top: 70px;
+    margin-left: 40px;
+}
+.firsttext h1{
+    font-size: 88px;
+    color: rgb(0,166,74);;
+}
+.firsttext img{
+    width: 690px;
+    margin-top: -40px;
+}
+.firstbutton{
+    height: 100px;
+    width: 400px;
+    margin-top: 480px;
+    margin-left: -700px;
+}
+.firstbutton a{
+   background-color: yellow;
+   text-decoration: none;
+   font-size: 20px;
+   padding: 10px;
+   color: black;
+
+}
+
+
+
+@media (min-width:761px) and (max-width:900px){
+    .burger{
+        display: block;
+        width: 40px;
+        height: 40px;
+        padding-top: 50px;
+        margin-left: 20px;
+        padding-left: 20px;
+    }
+    .burger svg:hover{
+        fill: white;
+    }
+   .alinks{
+    display: none;
+   }
+   .socialmedia{
+    display: none;
+   }
+}
+
+
+
+
+
+
+
 @media (max-width:468px){
     .burger{
         display: block;
@@ -77,14 +150,39 @@ body{
     .burger svg:hover{
         fill: white;
     }
-    .signin img{
-        padding-top: 5px;
-    }
    .alinks{
     display: none;
    }
    .socialmedia{
     display: none;
    }
+   .firsttext{
+    margin-left: -550px;
+    width: 100px;
+    height: 100px;
+    margin-top: -30px;
+   }
+   .firsttext h1{
+    font-size: 50px;
+   }
+   .firsttext img{
+    width: 300px;
+   }
+   .firstbutton{
+    margin-left: -100px;
+    margin-top: 0px;
+    margin-top: 330px;
+}
+  .firstbutton a{
+      
+}
+.bottle {
+    margin-left: 10px;
+    
+}
+.bottle img{
+    width: 217px;
+    padding-top: 380px;
+}
 }
 
