@@ -5,6 +5,58 @@ body{
 .burger{
    display: none;
 }
+
+.toggle{
+    display: none;
+}
+#myimage{
+    background-image:url(images/headline.png);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+#mydiv{
+    display: none;
+    background-color:white;
+    width: 500%;
+    padding: 10px;
+    line-height: 50px;
+}
+#mydiv a{
+    text-decoration: none;
+    color: black;
+}
+.toggle:checked + #myimage + #mydiv{
+    display: block;
+}
+.alinks{
+    width:100px ;
+    height: 10px;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 header{
     position: sticky;
     top: 0;
@@ -24,13 +76,28 @@ header{
 .logo img{
     width: 120px;
     padding: 20px;
+   
 }
+.toggle{
+    display: none;
+}
+#myimage{
+    cursor: pointer;
+    background-image: url();
+   
+}
+
 .alinks{
   width: 400px;
   height: 30px;
   margin: 10px;
   margin-top: 40px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.toggle:checked+#myimage+#alinks{
+    display: block;
+    width: 200px;
+    height: 200px;
 }
 .alinks a{
     padding: 8px;
@@ -261,6 +328,7 @@ small{
 
 @media(min-width: 900px) and (max-width:1400px){
   .alinks{
+    display: block;
    width: 700px;
   }
   .socialmedia{
@@ -301,7 +369,7 @@ small{
         fill: white;
     }
    .alinks{
-    display: none;
+    display:none;
    }
    .socialmedia{
     display: none;
